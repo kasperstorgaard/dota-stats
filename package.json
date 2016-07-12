@@ -1,0 +1,36 @@
+{
+  "name": "dota-stats",
+  "version": "0.1.0",
+  "description": "small webcomponents for dota stats using polymer",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "crisper": "^2.0.2",
+    "polymer-cli": "^0.12.0",
+    "vulcanize": "^1.14.8"
+  },
+  "scripts": {
+    "test": "polymer test",
+    "clean": "rm -r dist/ && mkdir dist",
+    "prebuild": "npm run clean",
+    "build": "vulcanize dota-stats.html > dist/element.html --inline-script --inline-css && crisper -s dist/element.html -h dist/element.v.html -j dist/element.js && babel dist/element.js -o dist/element.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasperstorgaard/dota-stats.git"
+  },
+  "keywords": [
+    "dota",
+    "stats",
+    "webcomponents",
+    "polymer",
+    "es6"
+  ],
+  "author": "kasperstorgaard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasperstorgaard/dota-stats/issues"
+  },
+  "homepage": "https://github.com/kasperstorgaard/dota-stats#readme"
+}

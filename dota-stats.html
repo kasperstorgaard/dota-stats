@@ -1,0 +1,34 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<!--
+`dota-stats`
+dota 2 stats elements
+
+@demo demo/index.html 
+-->
+
+<dom-module id="dota-stats">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'dota-stats',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'dota-stats',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
